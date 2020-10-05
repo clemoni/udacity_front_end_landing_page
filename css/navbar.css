@@ -3,7 +3,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 400;
+  z-index: 600;
 }
 .go-top i {
   font-size: 42px;
