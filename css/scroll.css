@@ -4,7 +4,7 @@
   z-index: 1000;
   height: 100vh;
   transform: translate(-200%, 0);
-  display: none;
+  /* display: none; */
 }
 .scroll__container {
   font-size: 1.1rem;
