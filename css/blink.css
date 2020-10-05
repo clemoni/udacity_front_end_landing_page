@@ -1,10 +1,10 @@
 .blink {
-  max-width: 100%;
-  width: 100%;
+  max-width: 90%;
+  width: 90%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 80vh 80vh;
-  margin: 3rem 0;
+  margin: 3rem auto;
 }
 .blink__poster {
   grid-template: 1/2;

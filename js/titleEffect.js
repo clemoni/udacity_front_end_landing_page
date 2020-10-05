@@ -37,10 +37,10 @@ const sectionObserver = new IntersectionObserver((entries) => {
   //   scale the all section if sup at 0.8 (influenced by css transition 1s)
   if (isIntersecting === true && intersectionRatio >= 0.5) {
     // console.log("in", intersectionRatio);
-    targetElement.style.transform = `scale(${0.95})`;
+    targetElement.style.transform = `scale(${1})`;
   }
   if (isIntersecting === false) {
-    targetElement.style.transform = `scale(${0.85})`;
+    targetElement.style.transform = `scale(${0.9})`;
   }
 
   //target the title
