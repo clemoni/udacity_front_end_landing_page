@@ -1,0 +1,36 @@
+.infinite-loop__container {
+  position: relative;
+  width: 100%;
+  z-index: 2000;
+  overflow: hidden;
+  border-top: 1.5px solid lightgrey;
+  border-bottom: 1.5px solid lightgrey;
+  padding: 0.5rem 0;
+}
+
+.infite-loop--right,
+.infite-loop--left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  list-style: disc;
+}
+
+.infite-loop--left {
+  justify-content: flex-end;
+}
+
+.infinite-loop__title {
+  font-family: "Limelight", cursive;
+  font-size: var(--medium-size-text);
+  min-width: max-content;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+.infite-loop--right .infinite-loop__title:nth-child(even) {
+  color: var(--secondary-color);
+}
+.infite-loop--left .infinite-loop__title:nth-child(odd) {
+  color: var(--secondary-color);
+}

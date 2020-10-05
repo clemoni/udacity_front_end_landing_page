@@ -1,0 +1,82 @@
+/*fonts */
+@import url(./fonts.css);
+
+/* import root variables */
+@import url(../css/root.css);
+
+/* import scroll */
+@import url(../css/scroll.css);
+
+/* import navbar */
+@import url(../css/navbar.css);
+
+/* import hedaer css */
+@import url(../css/header.css);
+
+/* import focus */
+@import url(../css/focus.css);
+
+/* import album */
+@import url(../css/album.css);
+
+/* import infite loop */
+@import url(../css/inite-loop.css);
+
+/* import blink */
+@import url(../css/blink.css);
+
+/* footer */
+@import url(../css/footer.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  /* font-family: "Poiret One", cursive; */
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+main {
+  margin-bottom: 25vh;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.section__title {
+  font-size: var(--sub-title-size-text);
+  font-weight: 900;
+  z-index: 300;
+  transform: translate(5%, 0);
+  font-family: "Limelight", cursive;
+  max-width: 75vw;
+  position: relative;
+  /* transition: transform 3s ease-in; */
+}
+
+.main__container {
+  width: 90vw;
+  margin: 1rem auto;
+  /* overflow-x: hidden; */
+  /* padding: 1rem 1rem; */
+}
+
+.focus,
+.album,
+.blink {
+  transform: scale(0.9);
+  transition: transform 1.5s ease-in;
+}

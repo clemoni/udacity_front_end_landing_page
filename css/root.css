@@ -1,0 +1,19 @@
+:root {
+  --main-color: #000;
+  --secondary-color: rgba(209, 38, 30, 1);
+  --secondary-color-transparent: rgba(209, 38, 30, 0.7);
+  --main-size-text: calc(
+    2.5rem + (17 - 2.5) * ((100vw - 300px) / (1200 - 300))
+  );
+  --sub-title-size-text: calc(
+    1.7rem + (15 - 1.7) * ((100vw - 300px) / (1200 - 300))
+  );
+
+  --medium-size-text: calc(
+    1.4rem + (2 - 1.4) * ((100vw - 300px) / (1200 - 300))
+  );
+
+  --regular-size-text: calc(
+    1.1rem + (1.3 - 1) * ((100vw - 300px) / (1200 - 300))
+  );
+}

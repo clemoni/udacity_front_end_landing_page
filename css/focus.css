@@ -1,0 +1,228 @@
+.focus {
+  position: relative;
+  margin-top: 5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15vh 1fr 1fr;
+}
+
+.focus .focus__title {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 300;
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: flex-start;
+  /* font-size: 2rem; */
+}
+
+.focus .focus__main-img {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 75% auto;
+}
+
+.focus__main-img .main-img__background {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(209, 38, 30, 1);
+  z-index: 100;
+  clip-path: polygon(50% 0, 100% 0%, 100% 100%, 50% 100%);
+}
+
+.focus__main-img .main-img__container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  z-index: 100;
+  padding-top: 1.5rem;
+  overflow: hidden;
+  /* border: 0.5rem solid white; */
+}
+
+.focus__main-img .main-img__container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1rem solid white;
+  object-position: 50% 0;
+  cursor: pointer;
+}
+
+.focus__main-img .main-img__title {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  z-index: 300;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-img__title h3 {
+  padding: 1rem;
+  width: 80%;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.5rem;
+}
+
+/* main info */
+.focus .focus__main-info {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 40% min-content;
+  margin: 2rem 0;
+}
+
+.main-info__container {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.main-info__container .main-info__title {
+  /* padding-top: 2rem; */
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+.main-info__container .main-info__title::after {
+  content: " ";
+  display: inline-block;
+  width: 60%;
+  height: 10px;
+  border-bottom: 1px solid black;
+  left: 0;
+  bottom: 0;
+}
+.main-info__container .main-info__text {
+  text-align: center;
+  line-height: 1.3;
+  font-size: 1.2rem;
+  font-weight: 100;
+  padding: 0.5rem 0 1rem 0;
+}
+.main-info__background {
+  grid-column: 1/3;
+  grid-row: 2/4;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(209, 38, 30, 1);
+  z-index: 100;
+}
+
+.focus__main-info .main-info__add-img {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  z-index: 300;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.focus__main-info .main-info__add-img img {
+  width: 85%;
+  height: 75%;
+  object-fit: cover;
+}
+.focus__main-info .main-info__add-text {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  z-index: 300;
+  text-align: right;
+  line-height: 1.3;
+  font-size: 1.2rem;
+  font-weight: 100;
+  width: 85%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .focus {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15vh 85vh;
+  }
+  .focus .focus__title {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    /* font-size: 2rem; */
+  }
+  .focus .focus__main-img {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 90% auto;
+  }
+
+  .focus__main-img .main-img__container {
+    padding-top: 15vh;
+  }
+
+  .focus .focus__main-info {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 5% 45% auto auto;
+    grid-template-rows: 13% 48% 27% auto;
+    margin: 0;
+  }
+
+  .main-info__container {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
+  .main-info__background {
+    grid-column: 2/4;
+    grid-row: 1/4;
+  }
+
+  .focus__main-info .main-info__add-img {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    z-index: 300;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .focus__main-info .main-info__add-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+  }
+
+  .focus__main-info .main-info__add-text {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding: 0.5rem 0;
+  }
+}

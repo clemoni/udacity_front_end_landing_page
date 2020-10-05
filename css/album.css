@@ -1,0 +1,182 @@
+/* .album {
+  margin-top: 2rem;
+  width: 90vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15vh auto;
+} */
+
+.album {
+  margin-top: 2rem;
+  width: 100%;
+  /* min-height: 100vh; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15vh auto auto;
+}
+
+.album__title {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 300;
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.album__container {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  position: relative;
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  background: url("../img/alice-alinari-X4FDm3HwVA8-unsplash.jpg") no-repeat
+    center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: greyscale(50%);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.album__cover {
+  width: 100%;
+  /* height: 100%; */
+  text-align: center;
+  font-family: "Limelight", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cover__date {
+  font-size: 12em;
+  background: rgba(255, 255, 255, 0.9);
+  font-weight: 900;
+  mix-blend-mode: screen;
+  width: 100%;
+  /* height: 100%; */
+}
+.cover__title {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--secondary-color);
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 900;
+  width: 100%;
+  /* height: 100%; */
+}
+
+.album .album__add-info {
+  width: 80vw;
+  min-height: 10vh;
+  padding: 4rem 0;
+  margin: 0 auto;
+}
+.album .add-info__text {
+  font-weight: 100;
+  font-size: var(--regular-size-text);
+  line-height: 1.4;
+  text-align: justify;
+}
+
+@media screen and (min-width: 600px) and (orientation: portrait) {
+  .album__container {
+    width: 65vw;
+    height: 80vh;
+  }
+  .album .album__add-info {
+    width: 65vw;
+  }
+  .album__container {
+    padding: 3rem 2rem;
+  }
+  .cover__date {
+    letter-spacing: 1.3rem;
+    font-size: 13em;
+  }
+  .cover__title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (orientation: landscape) {
+  .album__container {
+    width: 50vw;
+    height: 90vh;
+  }
+
+  .album .album__add-info {
+    width: 65vw;
+  }
+  .album__container {
+    padding: 3rem 2rem;
+  }
+  .cover__date {
+    letter-spacing: 1.3rem;
+    font-size: 8em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .album__container {
+    width: 55vw;
+    height: 90vh;
+  }
+  .album .album__add-info {
+    width: 55vw;
+  }
+
+  .album__container {
+    padding: 3rem 4rem;
+  }
+  .cover__date {
+    letter-spacing: 1.3rem;
+    font-size: 14em;
+  }
+  .cover__title {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .album__container {
+    width: 55vw;
+    height: 80vh;
+  }
+  .album .album__add-info {
+    width: 55vw;
+  }
+
+  .album__container {
+    padding: 3rem 4rem;
+  }
+  .cover__date {
+    letter-spacing: 1.3rem;
+    font-size: 14em;
+  }
+  .cover__title {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .album__container {
+    width: 45vw;
+    height: 80vh;
+  }
+  .album .album__add-info {
+    width: 45vw;
+  }
+
+  .album__container {
+    padding: 3rem 8rem;
+  }
+}

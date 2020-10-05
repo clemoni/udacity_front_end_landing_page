@@ -1,0 +1,91 @@
+/* NAVBAR */
+.go-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 400;
+}
+.go-top i {
+  font-size: 42px;
+  color: var(--secondary-color);
+}
+
+.main-navbar__container {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 0.5rem;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1.5px solid lightgrey;
+  border-bottom: none;
+}
+.main-navbar__container li {
+  text-align: center;
+}
+.main-navbar__container li a:hover {
+  color: var(--secondary-color);
+}
+
+.main-navbar__element {
+  color: var(--main-color);
+  position: relative;
+}
+.main-navbar__element::before {
+  content: attr(data-korean);
+  position: absolute;
+  background-color: white;
+  min-width: 19vw;
+  z-index: 40;
+  color: var(--secondary-color);
+  top: 0;
+  left: 0;
+
+  animation: fadeOut 10s infinite;
+  animation-delay: 40s;
+}
+.main-navbar__element:hover::before {
+  color: var(--main-color);
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+    z-index: -5;
+  }
+
+  50% {
+    opacity: 1;
+    z-index: 5;
+  }
+  100% {
+    opacity: 0;
+    z-index: 5;
+  }
+}
+
+@media screen and (min-width: 600px) and (orientation: landscape) {
+  .main-navbar__element {
+    font-size: 1.2rem;
+  }
+  .main-navbar__element::before {
+    transform: translateX(-5vw);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-height: 900px) {
+  .main-navbar__element {
+    font-size: 1.3rem;
+  }
+  .main-navbar__element::before {
+    transform: translateX(-9vw);
+  }
+}
+
+@media screen and (min-width: 700px) and (orientation: portrait) {
+  .main-navbar__element {
+    font-size: 1.2rem;
+  }
+  .main-navbar__element::before {
+    transform: translateX(-5vw);
+  }
+}
