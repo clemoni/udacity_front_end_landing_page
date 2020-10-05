@@ -3,7 +3,7 @@
   padding-left: 0.2rem;
   z-index: 1000;
   height: 100vh;
-  transform: translate(-200%, 0);
+  left: 1px;
   /* display: none; */
 }
 .scroll__container {
