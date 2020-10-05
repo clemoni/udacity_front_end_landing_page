@@ -81,6 +81,6 @@ ul {
 .focus,
 .album,
 .blink {
-  transform: scale(0.9);
+  transform: scale(0.85);
   transition: transform 1.5s ease-in;
 }
