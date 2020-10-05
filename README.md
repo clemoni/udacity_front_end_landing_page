@@ -3,7 +3,7 @@
 
 
 This is a Landing Page has been created as part of Udacity's Front End Web Developper Nanodegree. 
-This also a fake tribute Fan Page to KPop band BlackPink.
+This is also a fake tribute Fan Page to KPop band BlackPink.
 
 The project can be seen at: **[A BLACK PINK TRIBUTE](https://blackpinktribute.netlify.app/)**
 
