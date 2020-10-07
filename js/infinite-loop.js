@@ -29,7 +29,14 @@ const tilteNodeRight = titleList.map((title) => {
  * Append list to element infiniteLoopRight
  * @param  {Array} tilteNodeRight
  */
-const appendTitleNodeRight = (tilteNodeRight) => {
+const appendTitleNodeRight = () => {
+  const tilteNodeRight = titleList.map((title) => {
+    const newLi = document.createElement("li");
+    newLi.classList.add("infinite-loop__title");
+    newLi.textContent = title;
+    return newLi;
+  });
+
   tilteNodeRight.forEach((title) => {
     infiniteLoopRight.append(title);
   });
@@ -51,6 +58,12 @@ const tilteNodeLeft = titleList.map((title) => {
  * @param  {Array} tilteNodeRight
  */
 const prependTitleNodeLeft = () => {
+  const tilteNodeLeft = titleList.map((title) => {
+    const newLi = document.createElement("li");
+    newLi.classList.add("infinite-loop__title");
+    newLi.textContent = title;
+    return newLi;
+  });
   tilteNodeLeft.forEach((title) => {
     infiniteLoopLeft.prepend(title);
   });
@@ -79,8 +92,8 @@ let positionX = 0;
 // fake infinite loop - after when stack is full
 function animateInfiniteLoop() {
   // function that add the list 0f 8 titles
-  appendTitleNodeRight(tilteNodeRight);
-  prependTitleNodeLeft(tilteNodeLeft);
+  appendTitleNodeRight();
+  prependTitleNodeLeft();
 
   //   position increment of 1
   positionX = positionX + 1;
@@ -92,7 +105,7 @@ function animateInfiniteLoop() {
   //   it's an infinite loop, no stop
   requestAnimationFrame(animateInfiniteLoop);
 
-  if (infiniteLoopLeft.childElementCount > 80) {
+  if (infiniteLoopLeft.childElementCount > 88) {
     removefirst8Left();
     removeLast8ChildRight();
   }

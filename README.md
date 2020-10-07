@@ -12,6 +12,3 @@ The project can be seen at: **[A BLACK PINK TRIBUTE](https://blackpinktribute.ne
 - list of titles that are infinitely scrolling horizontally
 
 A **massive thanks** for the photographers of **https://unsplash.com** that accept to use their creations.
-
-created a new branch -dev for requested modification
-created another branch just in case

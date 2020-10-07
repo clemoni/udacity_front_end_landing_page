@@ -41,6 +41,7 @@
 .main-navbar__element {
   color: var(--main-color);
   position: relative;
+  font-size: 1.2rem;
 }
 
 .main-navbar__element::before {
@@ -53,6 +54,7 @@
   left: 0;
   animation: fadeOut 10s infinite;
   animation-delay: 40s;
+  transform: translateX(-5vw);
 }
 
 .main-navbar__element--active,
