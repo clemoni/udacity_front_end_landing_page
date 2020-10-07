@@ -11,14 +11,14 @@
 }
 
 /* NAVBAR CSS */
-.main-navbar {
+.main-navbar--sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1000;
-  color: red;
-  border: 1px solid red;
   max-width: 100%;
+  background: white;
+  border: 1.5px solid lightgrey;
 }
 
 .main-navbar__container {
@@ -27,7 +27,8 @@
   padding: 0.5rem 0.5rem;
   align-items: center;
   justify-content: space-evenly;
-  border: 1.5px solid lightgrey;
+  /* border: 1.5px solid lightgrey; */
+  background: white;
   border-bottom: none;
 }
 .main-navbar__container li {
@@ -41,21 +42,23 @@
   color: var(--main-color);
   position: relative;
 }
+
 .main-navbar__element::before {
   content: attr(data-korean);
   position: absolute;
   background-color: white;
   min-width: 19vw;
-  z-index: 40;
-  color: var(--secondary-color);
+  z-index: 50;
   top: 0;
   left: 0;
-
   animation: fadeOut 10s infinite;
   animation-delay: 40s;
 }
-.main-navbar__element:hover::before {
-  color: var(--main-color);
+
+.main-navbar__element--active,
+.main-navbar__element--active::before {
+  font-size: larger;
+  color: var(--secondary-color);
 }
 
 @keyframes fadeOut {

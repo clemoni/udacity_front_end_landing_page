@@ -18,6 +18,7 @@ const navbarCreator = (sections) => {
     const link = document.createElement("a");
     link.classList.add("main-navbar__element");
     link.setAttribute("data-korean", nameKorean);
+    link.setAttribute("data-master-section", name);
     link.textContent = name;
 
     const li = document.createElement("li");
