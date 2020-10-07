@@ -1,4 +1,4 @@
-/* NAVBAR */
+/* got UP bottom */
 .go-top {
   position: fixed;
   bottom: 20px;
@@ -8,6 +8,17 @@
 .go-top i {
   font-size: 42px;
   color: var(--secondary-color);
+}
+
+/* NAVBAR CSS */
+.main-navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  color: red;
+  border: 1px solid red;
+  max-width: 100%;
 }
 
 .main-navbar__container {

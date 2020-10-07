@@ -8,6 +8,7 @@ const navbarCreator = (sections) => {
   // creare ul
   const ul = document.createElement("ul");
   ul.classList.add("main-navbar__container");
+  // ul.classList.add("main-navbar--sticky");
 
   sections.forEach((section) => {
     const name = section.dataset.name;
