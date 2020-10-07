@@ -19,6 +19,11 @@ const scrolledElements = document.querySelectorAll(".scrolled__element");
 const scroll = document.querySelector(".scroll__item");
 
 /**
+ *
+ */
+const navbar = document.querySelector(".main-navbar");
+
+/**
  * get the data-name replace textContent scroll when element 50% root
  */
 const scrolledElementObserver = new IntersectionObserver((entries) => {
