@@ -84,3 +84,7 @@ ul {
   transform: scale(0.9);
   transition: transform 1.5s ease-in;
 }
+
+.main__section--active {
+  transform: scale(1);
+}
