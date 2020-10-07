@@ -25,6 +25,9 @@
 /* import blink */
 @import url(../css/blink.css);
 
+/* import documentary */
+@import url(../css/documentary.css);
+
 /* footer */
 @import url(../css/footer.css);
 
@@ -80,7 +83,8 @@ ul {
 
 .focus,
 .album,
-.blink {
+.blink,
+.media {
   transform: scale(0.9);
   transition: transform 1.5s ease-in;
 }
